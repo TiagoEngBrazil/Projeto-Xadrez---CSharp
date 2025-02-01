@@ -17,11 +17,24 @@ namespace xadrez_console
 
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
-            Console.WriteLine("Agurdando jogada: " + partida.jogadorAtual);
-            if(partida.xeque)
+
+            if (!partida.terminada)
             {
-                Console.WriteLine("XEQUE!");
+
+                Console.WriteLine("Agurdando jogada: " + partida.jogadorAtual);
+                if (partida.xeque)
+                {
+                    Console.WriteLine("XEQUE!");
+                }
+
             }
+            else
+            {
+                Console.WriteLine("Xeque-Mate!");
+                Console.WriteLine("Vencedor: " + partida.jogadorAtual);
+            }
+
+
         }
 
         private static void imprimirPecasCapturadas(PartidaDeXadrez partida)
@@ -46,7 +59,7 @@ namespace xadrez_console
         private static void imprimirConjunto(HashSet<Peca> conjunto)
         {
             Console.Write("[");
-            foreach(Peca x in conjunto)
+            foreach (Peca x in conjunto)
             {
                 Console.Write(x + " ");
             }
