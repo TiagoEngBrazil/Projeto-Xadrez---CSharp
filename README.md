@@ -1,6 +1,6 @@
 ### Jogo de Xadrez em C#
 
-Este projeto é uma aplicação de console que simula um jogo de xadrez completo, desenvolvido como parte do **curso de C# da Udemy**. 
+Este projeto é uma aplicação de console que simula um jogo de xadrez completo, desenvolvido como parte do **curso de C# da Udemy**, professor Nelio Alves. 
 O jogo implementa todas as regras clássicas do xadrez, incluindo movimentos especiais como **roque**, **en passant** e **promoção de peão**.
 
 **Melhorias em relação ao curso original:**
